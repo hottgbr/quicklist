@@ -1,0 +1,21 @@
+.grid {
+  display:grid;
+}
+.grid-flow-col {
+  grid-auto-flow: column;
+}
+
+.grid-flow-cols-2 {
+  grid-template-columns: 3fr 1fr;
+}
+
+.design-button {
+  color:white;
+  background-color: var(--color-brand);
+  font: var(--label);
+  padding: 12px 24px;
+  border: none;
+  border-radius: 12px;
+  width: 160px;
+  height: 100%;
+}
