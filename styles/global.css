@@ -47,6 +47,7 @@ main {
   gap: 2px;
   color: var(--color-brand);
   font: var(--link);
+  font-weight: 600;
   border: none;
   background:none;
   margin: 0 0 16px 3px;
@@ -71,10 +72,11 @@ h2 {
 
 #item-input {
   height: 100%;
+  max-width: 451px;
   border-radius: 12px;
   border: 2px solid var(--border-primary);
   font: var(--input);
-  padding: 11px 261px 11px 18px;
+  padding: 11px 259px 11px 18px;
 }
 
 #item-input:hover {
@@ -88,16 +90,78 @@ h2 {
 
 #item-input:focus::placeholder {
   color: var(--content-primary);
+  
 }
 
 #item-input, ul {
   background-color: var(--background-secondary);
 }
 
-.design-button:hover {
+.design-button:hover {  
   background-color: var(--color-brand-hover);
 }
 
 ul, ol {
   list-style: none;
+}
+
+#shoplist input[type="checkbox"] {
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border: 1px solid var(--border-primary);
+  border-radius: 6px;
+  margin: 16.5px 12px;
+}
+
+#shoplist input[type="checkbox"]:hover {
+  border:1px solid var(--border-hover);
+}
+#shoplist input[type="checkbox"]:checked {
+  background-color: var(--color-brand);
+  background-image: url("../assets/checkbox-check.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 12px;
+}
+
+#shoplist span {
+  font: var(--paragraph);
+  color: var(--content-secondary);
+  font-weight: 500;
+}
+
+#shoplist {
+  background: none;
+}
+
+#shoplist li {
+  display: flex;
+  justify-content: flex-start;
+  width: 627px;
+  height: 49px;
+  gap: 12px;  
+  background-color: white;
+  border-radius: 12px;
+  margin-bottom: 12px;
+}
+#shoplist label {
+  display: flex;
+  align-items: center;
+  flex:1;
+  height: 100%;
+  cursor: pointer;
+}
+
+#delete-button {
+  appearance: none;
+  border: none;
+  display: flex;
+  width: 16px;
+  height: 16px;
+  align-self: center;
+  background-color: var(--content-tertiary);
+  mask: url("../assets/trash.svg") no-repeat center;
+  mask-size: contain;
+  margin-right: 16px;
 }

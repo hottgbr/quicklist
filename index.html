@@ -18,17 +18,18 @@
       <span>← Voltar</span>
    </button>
     <h2>Compras da semana</h2>
-    <div id="input-wrapper" class="grid grid-flow-col .grid-flow-cols-2">
+    <form id="input-wrapper" class="grid grid-flow-col .grid-flow-cols-2">
       <input id="item-input" type="text" placeholder="Adicione um novo item">
       <button id="new-item-button" class="design-button">Adicionar item</button>
-    </div>
-    <ul>
-      <li>
+    </form>
+    <ul id="shoplist">
+      <li class="grid grid-flow-col">
         <label>
           <input type="checkbox">
           <span>Pão de forma</span>
-          <img src="assets/trash.png" alt="delete icon">
+
         </label>
+        <button id="delete-button"></button>
       </li>
     </ul>
   </main>
