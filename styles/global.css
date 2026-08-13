@@ -165,3 +165,42 @@ ul, ol {
   mask-size: contain;
   margin-right: 16px;
 }
+
+#delete-card {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 627px;
+  height: 44px;
+  gap: 12px;  
+  font: var(--label);
+  color: white;
+  border-radius: 12px;
+  background-color: var(--color-alert);
+}
+
+#exclamation-mark {
+  width: 20px;
+  height: 20px;
+  align-self: center;
+  background-color: white;
+  mask: url("../assets/exclamation-mark.svg") no-repeat center;
+  mask-size:contain;
+  margin-left: 12px;
+}
+
+footer span {
+  width: 527px;
+}
+.delete-card-button {
+  appearance: none;
+  border: none;
+  display: flex;
+  width: 11.5px;
+  height: 11.5px;
+  align-self: center;
+  background-color: white;
+  mask: url("../assets/close-icon.svg") no-repeat center;
+  mask-size:contain;
+  margin:0 auto;
+}
